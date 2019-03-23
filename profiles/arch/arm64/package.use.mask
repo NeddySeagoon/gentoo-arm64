@@ -54,11 +54,6 @@ net-libs/libvncserver -sdl
 virtual/ffmpeg -sdl
 >=x11-libs/wxGTK-3 -sdl
 
-# Roy Bamford <neddyseagoon@gentoo.org> (24 Feb 19)
-# kde-apps/cantor lua means luajit which needs luajit-2.1.0_beta3 for arm64
-# It builds OK but is not yet in ::gentoo. bug #678404
-kde-apps/cantor lua
-
 # Mart Raudsepp <leio@gentoo.org> (23 Feb 2019)
 # app-text/gspell not keyworded yet
 app-text/evince spell
