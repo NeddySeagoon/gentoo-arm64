@@ -26,11 +26,6 @@
 -neon
 -armvfp
 
-# Mart Raudsepp <leio@gentoo.org> (07 Jan 2019)
-# Does not work on arm64 until dev-lang/luajit-2.1
-# https://github.com/LuaJIT/LuaJIT/issues/26
-luajit
-
 # Michał Górny <mgorny@gentoo.org> (16 Jul 2018)
 # Python 3.7 support requires fresh versions of packages which are stuck
 # at keywordreqs.
