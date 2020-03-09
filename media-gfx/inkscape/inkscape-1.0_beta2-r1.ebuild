@@ -15,7 +15,7 @@ SRC_URI="https://inkscape.org/gallery/item/16197/${MY_P}${RELEASE_SUFFIX}.tar.xz
 
 LICENSE="GPL-2 LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~hppa ~ppc ~ppc64 ~x86"
+KEYWORDS="~amd64 ~arm64 ~hppa ~ppc ~ppc64 ~x86"
 IUSE="cdr dbus dia exif graphicsmagick imagemagick inkjar jemalloc jpeg lcms nls
 openmp postscript spell static-libs svg2 visio wpg"
 
