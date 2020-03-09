@@ -11,7 +11,7 @@ SRC_URI="https://github.com/KiCad/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="|| ( GPL-3+ CC-BY-3.0 ) GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~arm64 ~x86"
 IUSE="html +pdf"
 LANG_USE=" l10n_ca l10n_de l10n_en l10n_es l10n_fr l10n_id l10n_it l10n_ja l10n_pl l10n_ru l10n_zh"
 IUSE+=${LANG_USE}
