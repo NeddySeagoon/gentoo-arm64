@@ -18,7 +18,7 @@ fi
 
 LICENSE="BSD-2"
 SLOT="0"
-IUSE="audit bash debug ncurses pam newnet prefix +netifrc selinux sysv-utils
+IUSE="audit bash debug ncurses pam newnet prefix +netifrc selinux swclock sysv-utils
 	unicode"
 
 COMMON_DEPEND="
@@ -133,6 +133,11 @@ src_install() {
 	dodoc ChangeLog *.md
 	if use newnet; then
 		dodoc README.newnet
+	fi
+	# don't run hwclock by default on swclock systems
+	if use swclock; then
+		rm -f "${ED}"/etc/runlevels/boot/hwclock
+		ln -s /etc/init.d/swclock "${ED}"/etc/runlevels/boot/swclock
 	fi
 }
 
