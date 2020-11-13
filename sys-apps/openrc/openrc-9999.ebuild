@@ -134,10 +134,13 @@ src_install() {
 	if use newnet; then
 		dodoc README.newnet
 	fi
-	# don't run hwclock by default on swclock systems
+	# Toggle hwclock/swclock based on use swclock
 	if use swclock; then
 		rm -f "${ED}"/etc/runlevels/boot/hwclock
 		ln -s /etc/init.d/swclock "${ED}"/etc/runlevels/boot/swclock
+	else
+		rm -f "${ED}"/etc/runlevels/boot/swclock
+		ln -s /etc/init.d/hwclock "${ED}"/etc/runlevels/boot/hwclock
 	fi
 }
 
